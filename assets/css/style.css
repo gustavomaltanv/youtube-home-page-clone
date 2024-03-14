@@ -1,0 +1,107 @@
+@import url('reset.css');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	vertical-align: baseline;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background: #FFFFFF;
+    display: flex;
+    padding: 12px 36px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    display: flex;
+    gap: 0 24px;
+}
+
+.center {
+    display: flex;
+    border: solid 2px #F9F9F9;
+}
+.center input, .center button {
+    border: none;
+    height: 32px;
+    padding: 0 10px;
+}
+
+.center input {
+    width: 320px;
+}
+
+.icon {
+    height: 24px;
+}
+
+.icon-yt {
+    height: 20px;
+}
+
+main {
+    background-color: #f9f9f9;  
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+    background-color: #FFFFFF;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+nav a {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: nowrap;
+}
+
+.recommended-video > img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.recommended-info {
+    display: flex;
+    padding-top: 6px;
+    gap: 16px;
+    width: 100%;
+    min-width: 200px;
+}
+
+.recommended-desc h2 {
+    font-weight: 700;
+    font-size: 1.1em;
+
+}
+
+.recommended-channel img {
+    border-radius: 50%;
+    width: 36px;
+}
+
+.container {
+    display: grid;
+    width: calc(100vw - 5%);
+    grid-template: repeat(3, 3fr) / repeat(4, minmax(250px, 300px));
+    justify-content: space-evenly;
+    gap: 15px 10px;
+}
